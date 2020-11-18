@@ -10,8 +10,17 @@ const Router = () => {
         <Stack.Navigator>
           <Stack.Screen 
             initialRouteName="Home"
-            name="Home"
+            name="CovidApp"
             component={Home}
+            options={{
+              headerStyle: {
+                backgroundColor: "#1F2337"
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }}
           />
         </Stack.Navigator>
       </NavigationContainer>
